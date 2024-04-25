@@ -1,0 +1,18 @@
+.car-container {
+    padding: 10px;
+    width: auto;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    display: flex;
+}
+
+#three-canvas {
+    width: 100%;  /* 占据整个容器的宽度 */
+    height: 300px;  /* 占据整个容器的高度 */
+    background: #e8e8e8;  /* 白色背景 */
+    border-radius: 5px;  /* 与容器的圆角保持一致 */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  轻微阴影 */
+}
+

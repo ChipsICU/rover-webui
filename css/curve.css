@@ -1,0 +1,43 @@
+.curve-speed-container {
+    padding: 10px;
+    width: 500px;  /* 可以换成auto */
+    flex-direction: column; /* Stack title and canvas vertically */
+    justify-content: center;
+    align-items: center; /* Center align items horizontally */
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.curve-steering-container {
+    padding: 10px;
+    width: 500px; /* 可以换成auto */
+    flex-direction: column; /* Stack title and canvas vertically */
+    justify-content: center;
+    align-items: center; /* Center align items horizontally */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+}
+
+
+.curve-speed-title, 
+.curve-steering-title {
+    margin-bottom: 10px; /* Space between title and canvas */
+    font-size: 18px; /* Larger font size for the title */
+    color: #333; /* Dark gray color for the text */
+    text-align: center; /* Center the title text */
+}
+
+#curve-steering,
+#curve-speed {
+    width: 100%; /* Full width for the canvas */
+    max-width: 600px; /* Maximum width to keep it from becoming too large */
+    height: 300px; /* Fixed height */
+}
+
+

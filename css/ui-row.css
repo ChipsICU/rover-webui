@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.ui-row-1, .ui-row-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%
+}
+
+.ui-row-1 {
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #ddd;
+}
+
+.ui-row-2 {
+    flex-wrap: nowrap;
+    background-color: #e8e8e8;
+}

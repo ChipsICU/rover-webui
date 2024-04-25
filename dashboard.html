@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <title>载人月球车模拟驾驶平台</title>
+    
+    <link rel="stylesheet" href="css/ui-row.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/speedometer.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/3d-car.css">
+    <link rel="stylesheet" href="css/curve.css">  
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="lunar-title">
+        <h1>RCAMC-LUNAR-ROVER-SIMULATOR-WEBUI</h1>
+    </div>
+    
+    <div class="ui-row-1">
+        <div class="speedometer-container">
+            <div class="speedometer-text">
+                <div class="static">Speed</div>
+                <div class="dynamic">
+                    <span class="km">0</span>
+                    <span class="unit">KMPH</span>
+                </div>
+            </div>
+            <div class="center-point"></div>
+            <div class="speedometer-center-hide"></div>
+            <div class="speedometer-bottom-hide"></div>
+            <div class="arrow-container">
+                <div class="arrow-wrapper speed-0">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+            <!-- <div class="speedometer-scale speedometer-scale-0 active"></div> -->
+            <div class="speedometer-scale speedometer-scale-1 active"></div>
+            <div class="speedometer-scale speedometer-scale-2"></div>
+            <div class="speedometer-scale speedometer-scale-3"></div>
+            <div class="speedometer-scale speedometer-scale-4"></div>
+            <div class="speedometer-scale speedometer-scale-5"></div>
+            <div class="speedometer-scale speedometer-scale-6"></div>
+            <div class="speedometer-scale speedometer-scale-7"></div>
+            <div class="speedometer-scale speedometer-scale-8"></div>
+            <div class="speedometer-scale speedometer-scale-9"></div>
+            <div class="speedometer-scale speedometer-scale-10"></div>
+            <div class="speedometer-scale speedometer-scale-11"></div>
+            <div class="speedometer-scale speedometer-scale-12"></div>
+            <div class="speedometer-scale speedometer-scale-13"></div>
+            <div class="speedometer-scale speedometer-scale-14"></div>
+            <div class="speedometer-scale speedometer-scale-15"></div>
+            <div class="speedometer-scale speedometer-scale-16"></div>
+            <div class="speedometer-scale speedometer-scale-17"></div>
+            <div class="speedometer-scale speedometer-scale-18"></div>
+            <div class="speedometer-scale speedometer-scale-19"></div>
+            <div class="speedometer-scale speedometer-scale-20"></div>
+            <div class="speedometer-scale speedometer-scale-21"></div>
+            <div class="speedometer-scale speedometer-scale-22"></div>
+            <div class="speedometer-scale speedometer-scale-23"></div>
+            <div class="speedometer-scale speedometer-scale-24"></div>
+            <div class="speedometer-scale speedometer-scale-25"></div>
+            <div class="speedometer-scale speedometer-scale-26"></div>
+            <div class="speedometer-scale speedometer-scale-27"></div>
+            <div class="speedometer-scale speedometer-scale-28"></div>
+            <div class="speedometer-scale speedometer-scale-29"></div>
+            <div class="speedometer-scale speedometer-scale-30"></div>
+            <div class="speedometer-scale speedometer-scale-31"></div>
+            <div class="speedometer-scale speedometer-scale-32"></div>
+            <div class="speedometer-scale speedometer-scale-33"></div>
+            <div class="speedometer-scale speedometer-scale-34"></div>
+            <div class="speedometer-scale speedometer-scale-35"></div>
+            <div class="speedometer-scale speedometer-scale-36"></div>
+            <div class="speedometer-scale speedometer-scale-37"></div>
+            <div class="speedometer-scale speedometer-scale-38"></div>
+            <div class="speedometer-scale speedometer-scale-39"></div>
+            <div class="speedometer-scale speedometer-scale-40"></div>
+            <div class="speedometer-scale speedometer-scale-41"></div>
+            <div class="speedometer-scale speedometer-scale-42"></div>
+            <div class="speedometer-scale speedometer-scale-43"></div>
+            <div class="speedometer-scale speedometer-scale-44"></div>
+            <div class="speedometer-scale speedometer-scale-45"></div>
+            <div class="speedometer-scale speedometer-scale-46"></div>
+            <div class="speedometer-scale speedometer-scale-47"></div>
+            <div class="speedometer-scale speedometer-scale-48"></div>
+            <div class="speedometer-scale speedometer-scale-49"></div>
+            <div class="speedometer-scale speedometer-scale-50"></div>
+            <div class="speedometer-scale speedometer-scale-51"></div>
+            <div class="speedometer-scale speedometer-scale-52"></div>
+            <div class="speedometer-scale speedometer-scale-53"></div>
+            <div class="speedometer-scale speedometer-scale-54"></div>
+            <div class="speedometer-scale speedometer-scale-55"></div>
+            <div class="speedometer-scale speedometer-scale-56"></div>
+            <div class="speedometer-scale speedometer-scale-57"></div>
+            <div class="speedometer-scale speedometer-scale-58"></div>
+            <div class="speedometer-scale speedometer-scale-59"></div>
+            <div class="speedometer-scale speedometer-scale-60"></div>
+            <div class="speedometer-scale speedometer-scale-61"></div>
+            <div class="speedometer-scale speedometer-scale-62"></div>
+            <div class="speedometer-scale speedometer-scale-63"></div>
+            <div class="speedometer-scale speedometer-scale-64"></div>
+            <div class="speedometer-scale speedometer-scale-65"></div>
+            <div class="speedometer-scale speedometer-scale-66"></div>
+            <div class="speedometer-scale speedometer-scale-67"></div>
+            <div class="speedometer-scale speedometer-scale-68"></div>
+            <div class="speedometer-scale speedometer-scale-69"></div>
+            <div class="speedometer-scale speedometer-scale-70"></div>
+            <div class="speedometer-scale speedometer-scale-71"></div>
+            <div class="speedometer-scale speedometer-scale-72"></div>
+            <div class="speedometer-scale speedometer-scale-73"></div>
+            <div class="speedometer-scale speedometer-scale-74"></div>
+            <div class="speedometer-scale speedometer-scale-75"></div>
+            <div class="speedometer-scale speedometer-scale-76"></div>
+            <div class="speedometer-scale speedometer-scale-77"></div>
+            <div class="speedometer-scale speedometer-scale-78"></div>
+            <div class="speedometer-scale speedometer-scale-79"></div>
+            <div class="speedometer-scale speedometer-scale-80"></div>
+            <div class="speedometer-scale speedometer-scale-81"></div>
+            <div class="speedometer-scale speedometer-scale-82"></div>
+            <div class="speedometer-scale speedometer-scale-83"></div>
+            <div class="speedometer-scale speedometer-scale-84"></div>
+            <div class="speedometer-scale speedometer-scale-85"></div>
+            <div class="speedometer-scale speedometer-scale-86"></div>
+            <div class="speedometer-scale speedometer-scale-87"></div>
+            <div class="speedometer-scale speedometer-scale-88"></div>
+            <div class="speedometer-scale speedometer-scale-89"></div>
+            <div class="speedometer-scale speedometer-scale-90"></div>
+            <div class="speedometer-scale speedometer-scale-91"></div>
+            <div class="speedometer-scale speedometer-scale-92"></div>
+            <div class="speedometer-scale speedometer-scale-93"></div>
+            <div class="speedometer-scale speedometer-scale-94"></div>
+            <div class="speedometer-scale speedometer-scale-95"></div>
+            <div class="speedometer-scale speedometer-scale-96"></div>
+            <div class="speedometer-scale speedometer-scale-97"></div>
+            <div class="speedometer-scale speedometer-scale-98"></div>
+            <div class="speedometer-scale speedometer-scale-99"></div>
+            <div class="speedometer-scale speedometer-scale-100"></div>
+            <div class="speedometer-scale speedometer-scale-101"></div>
+            <div class="speedometer-scale speedometer-scale-102"></div>
+            <div class="speedometer-scale speedometer-scale-103"></div>
+            <div class="speedometer-scale speedometer-scale-104"></div>
+            <div class="speedometer-scale speedometer-scale-105"></div>
+            <div class="speedometer-scale speedometer-scale-106"></div>
+            <div class="speedometer-scale speedometer-scale-107"></div>
+            <div class="speedometer-scale speedometer-scale-108"></div>
+            <div class="speedometer-scale speedometer-scale-109"></div>
+            <div class="speedometer-scale speedometer-scale-110"></div>
+            <div class="speedometer-scale speedometer-scale-111"></div>
+            <div class="speedometer-scale speedometer-scale-112"></div>
+            <div class="speedometer-scale speedometer-scale-113"></div>
+            <div class="speedometer-scale speedometer-scale-114"></div>
+            <div class="speedometer-scale speedometer-scale-115"></div>
+            <div class="speedometer-scale speedometer-scale-116"></div>
+            <div class="speedometer-scale speedometer-scale-117"></div>
+            <div class="speedometer-scale speedometer-scale-118"></div>
+            <div class="speedometer-scale speedometer-scale-119"></div>
+            <div class="speedometer-scale speedometer-scale-120"></div>
+            <div class="speedometer-scale speedometer-scale-121"></div>
+            <div class="speedometer-scale speedometer-scale-122"></div>
+            <div class="speedometer-scale speedometer-scale-123"></div>
+            <div class="speedometer-scale speedometer-scale-124"></div>
+            <div class="speedometer-scale speedometer-scale-125"></div>
+            <div class="speedometer-scale speedometer-scale-126"></div>
+            <div class="speedometer-scale speedometer-scale-127"></div>
+            <div class="speedometer-scale speedometer-scale-128"></div>
+            <div class="speedometer-scale speedometer-scale-129"></div>
+            <div class="speedometer-scale speedometer-scale-130"></div>
+            <div class="speedometer-scale speedometer-scale-131"></div>
+            <div class="speedometer-scale speedometer-scale-132"></div>
+            <div class="speedometer-scale speedometer-scale-133"></div>
+            <div class="speedometer-scale speedometer-scale-134"></div>
+            <div class="speedometer-scale speedometer-scale-135"></div>
+            <div class="speedometer-scale speedometer-scale-136"></div>
+            <div class="speedometer-scale speedometer-scale-137"></div>
+            <div class="speedometer-scale speedometer-scale-138"></div>
+            <div class="speedometer-scale speedometer-scale-139"></div>
+            <div class="speedometer-scale speedometer-scale-140"></div>
+            <div class="speedometer-scale speedometer-scale-141"></div>
+            <div class="speedometer-scale speedometer-scale-142"></div>
+            <div class="speedometer-scale speedometer-scale-143"></div>
+            <div class="speedometer-scale speedometer-scale-144"></div>
+            <div class="speedometer-scale speedometer-scale-145"></div>
+            <div class="speedometer-scale speedometer-scale-146"></div>
+            <div class="speedometer-scale speedometer-scale-147"></div>
+            <div class="speedometer-scale speedometer-scale-148"></div>
+            <div class="speedometer-scale speedometer-scale-149"></div>
+            <div class="speedometer-scale speedometer-scale-150"></div>
+            <div class="speedometer-scale speedometer-scale-151"></div>
+            <div class="speedometer-scale speedometer-scale-152"></div>
+            <div class="speedometer-scale speedometer-scale-153"></div>
+            <div class="speedometer-scale speedometer-scale-154"></div>
+            <div class="speedometer-scale speedometer-scale-155"></div>
+            <div class="speedometer-scale speedometer-scale-156"></div>
+            <div class="speedometer-scale speedometer-scale-157"></div>
+            <div class="speedometer-scale speedometer-scale-158"></div>
+            <div class="speedometer-scale speedometer-scale-159"></div>
+            <div class="speedometer-scale speedometer-scale-160"></div>
+            <div class="speedometer-scale speedometer-scale-161"></div>
+            <div class="speedometer-scale speedometer-scale-162"></div>
+            <div class="speedometer-scale speedometer-scale-163"></div>
+            <div class="speedometer-scale speedometer-scale-164"></div>
+            <div class="speedometer-scale speedometer-scale-165"></div>
+            <div class="speedometer-scale speedometer-scale-166"></div>
+            <div class="speedometer-scale speedometer-scale-167"></div>
+            <div class="speedometer-scale speedometer-scale-168"></div>
+            <div class="speedometer-scale speedometer-scale-169"></div>
+            <div class="speedometer-scale speedometer-scale-170"></div>
+            <div class="speedometer-scale speedometer-scale-171"></div>
+            <div class="speedometer-scale speedometer-scale-172"></div>
+            <div class="speedometer-scale speedometer-scale-173"></div>
+            <div class="speedometer-scale speedometer-scale-174"></div>
+            <div class="speedometer-scale speedometer-scale-175"></div>
+            <div class="speedometer-scale speedometer-scale-176"></div>
+            <div class="speedometer-scale speedometer-scale-177"></div>
+            <div class="speedometer-scale speedometer-scale-178"></div>
+            <div class="speedometer-scale speedometer-scale-179"></div>
+            <div class="speedometer-scale speedometer-scale-180"></div>
+        </div>
+        <div class="car-container">
+            <canvas id="three-canvas"></canvas>
+        </div>
+        <div class="curve-speed-container">
+            <h2 class="curve-speed-title">Speed Curve Over Time</h2>
+            <canvas id="curve-speed" aria-label="SpeedCurve" role="img"></canvas>
+        </div>
+    </div>
+    
+    <div class="ui-row-2">
+        <div class="turning-mode-form-container">
+            <form style="display: flex; flex-direction: column;">
+                <span id="turn-mode-title">
+                    <!-- <i class="fa-solid fa-gear"></i> -->
+                    <label class="turn-mode-label">Steering Mode</label>
+                </span>
+                <label><input type="radio" name="turn-mode"> Full-Wheel</label>
+                <label><input type="radio" name="turn-mode"> Front-Wheel</label>
+                <label><input type="radio" name="turn-mode"> Rear-Wheel</label>
+            </form>
+        </div>
+        <div class="bar-container">
+            <span id="brake-title">
+                <i class="fa-solid fa-gear"></i>
+                <label class="brake-label">Brake Signal</label>
+            </span>
+            <div id="brake-bar"></div>
+        </div>
+        <div class="curve-steering-container">
+            <h2 class="curve-steering-title">Steering Curve Over Time</h2>
+            <canvas id="curve-steering" aria-label="SteeringCurve" role="img"></canvas>
+        </div>
+    </div>
+
+    <script type="module" src="js/dynamics.js"></script>
+    <script type="module" src="js/appendix.js"></script>
+    <script type="module" src="js/3d-car.js"></script>
+</body>
+</html>
+
+
+<!-- |---------------------------------------------------------------------------|
+|   column 1              |        column 2        |       column 3         |
+|-------------------------|------------------------|------------------------|
+|                         |                        |                        |
+|    [Speedometer]        |                        |  [Curve Speed Chart]   |
+|                         |                        |                        |
+|-------------------------|     [Car Canvas]       |------------------------|
+|    [Turning Mode Form]  |                        |[Curve Steering Chart]  |
+|      [Brake Bar]        |                        |                        |
+|      [Progress Bar]     |                        |                        |
+|                         |                        |                        |
+|---------------------------------------------------------------------------| -->

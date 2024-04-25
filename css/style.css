@@ -1,0 +1,81 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url(/images/pexels-pixabay-47367-super.jpg);
+    overflow: hidden;
+    background-size: cover;
+}
+
+.container{
+    width: 360px;
+    margin: 4% auto;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 17px #333;
+}
+
+.logo {
+    width: 200px; /* 可调整图片大小 */
+    height: auto;
+    position: absolute; /* 使用绝对定位 */
+    top: 10px; /* 距离顶部10像素 */
+    left: 10px; /* 距离左侧10像素 */
+}
+
+.header{
+    text-align: center;
+    padding-top: 75px;
+}
+
+.header h1{
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+
+.main{
+    text-align: center;
+}
+
+.main input,button{
+    width: 300px;
+    height: 40px;
+    /* 边框消失 */
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.main button{
+    padding: 0;
+    background-color: #83acf1;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+
+.main input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+
+.main span{
+    position: relative;
+}
+
+.main i{
+    position: absolute;
+    left: 15px;
+    color: #333;
+    font-size: 16px;
+    top: 2px;
+}
